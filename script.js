@@ -14,7 +14,7 @@ function add() {
     return
   }
   alert("Adicionado com sucesso ✅")
-  nlwSetup.addDay("20/01")
+  nlwSetup.addDay(today)
 }
 
 function save() {
@@ -23,6 +23,5 @@ function save() {
 
 const data = JSON.parse(localStorage.getItem("NLWSetup@habits")) || {}
 
-// set a variavel. load chama ela.
 nlwSetup.setData(data)
 nlwSetup.load()
